@@ -1,0 +1,29 @@
+
+* {
+    margin: 0;
+}
+
+
+.conteudo-navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0476D9;
+    margin: 0;
+    height: 80px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 2px 3px #02152578;
+    color: white;
+
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo-principal {
+    
+}
