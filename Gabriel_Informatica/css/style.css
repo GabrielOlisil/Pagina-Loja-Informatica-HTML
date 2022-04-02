@@ -6,7 +6,8 @@
    0476D9  
    76E7CD
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 
 * {
     margin: 0;
@@ -36,12 +37,12 @@
 
 
 
-a {
+.links > a {
     text-decoration: none;
     color: white;
 }
-a:hover {
-    color : black
+.links > a:hover {
+    color: rgba(185, 145, 145, 0.793);
 }
 
 
@@ -60,32 +61,53 @@ main {
 .conteudo-principal {
     background-color: white;
     width: 1300px;
-    height: 1000px;
+    height: auto;
     margin: auto;
 }
 
 .primeira-sessao{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: flex-end;
+    gap: 200px;
     margin-bottom: 40px;
+    padding: 70px 0px;
 }
 
 .slogan{
-    font-size: 2.5em;
-    width: 400px;
+    font-size: 2.7rem;
+    width: 600px;
     text-align: left;
-    color: #00BCD5;
+    color: white;
     background-color: #2222FF;
     padding: 20px;
-    border-radius: 30px;
-    font-weight: 500;
+    text-shadow: 1px 1px 1px #00000080;
+    border-start-start-radius: 30px;
+    font-weight: 700;
     box-shadow: 4px 2px 4px #14148879;
 }
+
 #foco-slogan {
+    font-size: 3.4rem;
     color: white;
     font-weight: bold;
+}
+
+#destaque{
+    font-family: 'Archivo black';
+    color: #00BCD5;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.banner{
+    background-color: #E84E40;
+    padding: 200px;
+}
+.botao-conferir {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
 }
 
 .tabela-servicos{
@@ -102,7 +124,7 @@ th, td {
 
 th {
     color: white;
-    background-color: #EF6F6C;
+    background-color: #E84E40;
 }
 
 
