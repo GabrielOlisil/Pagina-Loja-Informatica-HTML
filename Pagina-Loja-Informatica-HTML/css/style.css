@@ -48,12 +48,9 @@ img {
     gap: 30px;
 }
 
+
 main {
-    text-align: center;
-}
-
-
-.conteudo-principal {
+    text-align: center;    
     background-color: white;
     width: 1300px;
     height: auto;
@@ -61,9 +58,13 @@ main {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     box-shadow: 1px 1px 10px rgb(155, 155, 155);
-
     padding-bottom: 30px;
 }
+
+main.formulario{
+    border-radius: 12px;
+}
+
 
 .primeira-sessao{
     display: flex;
