@@ -8,7 +8,7 @@
 
 *::selection{
     background-color: darkgray;
-    color: rgb(61, 44, 23);
+    color: rgb(49, 27, 9);
 }
 
 img {
@@ -212,7 +212,7 @@ body {
 fieldset {
     border: 0px;
 }
-#pag-form{
+.pag-form{
     padding-top: 40px;
     width:  700px;
     border-radius: 12px; 
