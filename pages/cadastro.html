@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div class="conteudo-navegacao">
+            
+        <h1>Gabriel Informática</h1>
+        
+        <div class="links">
+            <a href="../index.html">Home</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="https://github.com/GabrielOlisil/Pagina-Loja-Informatica-HTML" target="_blank">Open Source</a>
+            <a href="faleConosco.html">Fale conosco</a>
+        </div>        
+        
+    </div>
+
+    <main class="pag-form">
+        <h2 class="titulo-form"> Cadastre-se</h2>
+
+        <form action="dados_cadastro.php" method="post" class="formulario">
+
+            <fieldset class="informacoes-pessoais">
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" class="input-campo" placeholder="ex: Gabriel de Oliveira" required>
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" name="email" class="input-campo" placeholder="ex: seuemail@gmail.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sexo"><strong>Sexo:</strong></label>
+                    <select name="sexo" class="input-campo">
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+                
+            </fieldset>
+
+            <fieldset class="campo">
+                <div>
+                    <label for="cep"><strong>Cep:</strong></label>
+                    <input type="" name="nome" class="input-campo" required>
+                    <label for="estado"><strong>Estado:</strong></label>
+                    <select name="cep" class="select-box">
+                        <option value="AC" >Acre</option>
+                        <option value="Al">Alagoas</option>
+                        <option value="RO">Rondonia</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BH">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+
+                    </select>
+                </div>
+
+            </fieldset>
+
+        </form>
+    </main>
+    
+</body>
+</html>
