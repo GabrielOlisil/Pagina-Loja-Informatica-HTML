@@ -27,7 +27,7 @@
 
         <form action="envio_mensagem.php" method="get" id="form-fale-conosco" class="formulario">
 
-            <fieldset class="informacoes-pessoais"> 
+            <fieldset class="dividir-tela"> 
                 
                 
                 <div class="campo">                    
@@ -48,8 +48,8 @@
                     <label for="opcao-novidade">Deseja receber nossas novidades?</label>
                     <div class="resposta-novidade">
                         
-                        <label for="receber-novidades"><input type="radio" name="novidades" class="opcao-form" value="sim">Sim</label>
-                        <label for="nao-receber-novidades"><input type="radio" name="novidades" class="opcao-form" value="nao">Não</label>
+                        <label for="receber-novidades"><input type="radio" name="novidades" class="opcao-form" value="sim"> Sim</label>
+                        <label for="nao-receber-novidades"><input type="radio" name="novidades" class="opcao-form" value="nao"> Não</label>
                         
                     </div>
                 </div>                
@@ -59,10 +59,15 @@
                 <label for="escreva-mensagem">Escreva sua mensagem:</label>
                 <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
             </div>
+
+
+            <div class="dividir-tela">
+                <input type="reset" value="Limpar Formulário" class="botao-form">
+                
+                <input type="submit" class="botao-form" name="enviar" value="Enviar dados">
+            </div>
+
             
-            <input type="submit" class="botao-enviar" name="enviar" value="Enviar dados">
-
-
         </form>
     </main>
 

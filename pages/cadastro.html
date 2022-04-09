@@ -26,7 +26,7 @@
 
         <form action="dados_cadastro.php" method="post" class="formulario">
 
-            <fieldset class="informacoes-pessoais">
+            <fieldset class="dividir-tela">
                 <div class="campo">
                     <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" name="nome" class="input-campo" placeholder="ex: Gabriel de Oliveira" required>
@@ -40,17 +40,25 @@
                         <option value="masc">Masculino</option>
                         <option value="fem">Feminino</option>
                         <option value="other">Outro</option>
+                        <option value="pnr">Prefiro não responder</option>
                     </select>
+
+                    <label for="idade"><strong>Idade:</strong></label>
+
+                    <div id="alinhar">
+                        <label for="idade">Eu tenho: <br/><input type="radio" class="input-campo" name="idade-opcao" value="13-a-17"> 13 a 17 anos <br/> <input type="radio" class="input-campo" name="idade-opcao" value="18-a-24"> 18 a 24 anos <br/> <input type="radio" class="input-campo" name="idade-opcao" value="25-acima"> 25 anos acima</label>
+                        
+                    </div>
                 </div>
                 
             </fieldset>
 
-            <fieldset class="campo">
-                <div>
+            <fieldset class="dividir-tela">
+                <div class="campo">
                     <label for="cep"><strong>Cep:</strong></label>
-                    <input type="" name="nome" class="input-campo" required>
+                    <input type="text" name="nome" class="input-campo" required>
                     <label for="estado"><strong>Estado:</strong></label>
-                    <select name="cep" class="select-box">
+                    <select name="cep" class="input-campo" required>
                         <option value="AC" >Acre</option>
                         <option value="Al">Alagoas</option>
                         <option value="RO">Rondonia</option>
@@ -62,11 +70,94 @@
                         <option value="GO">Goiás</option>
                         <option value="MA">Maranhão</option>
                         <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="NONE" selected>Nenhum</option>
 
                     </select>
+
+                    <label for="cidade"><strong>Cidade:</strong></label>
+                    <input type="text" class="input-campo">
+                </div>
+
+                <div class="campo">
+                    <label for="endereco"><strong>Endereço:</strong></label>
+                    <input type="text" class="input-campo">
+                    <label for="numero"><strong>Número:</strong></label>
+                    <input type="number" class="input-campo">
+                    <label for="complemento"><strong>Complemento:</strong></label>
+                    <input type="text" class="input-campo">
                 </div>
 
             </fieldset>
+
+            <fieldset class="campo">
+
+                <label for="Dispositivos">Marque todos os tipos de dispositivos que você tem na sua casa:</label>
+                <div class="markers">
+                    <label for="celular">
+                        <input type="radio" value="celular" class="input-campo"> Celular
+                    </label>
+                    <label for="computadpr">
+                        <input type="radio" value="computer" class="input-campo"> Computador-Desktop
+                    </label>
+                    <label for="notebook">
+                        <input type="radio" value="notebook" class="input-campo"> Notebook
+                    </label>
+                    <label for="tablet">
+                        <input type="radio" value="tablet" class="input-campo"> Tablet
+                    </label>
+                </div>
+
+                <label for="notificar-produtos">Marque os produtos que deseja ser notificado quando entrar em estoque</label>
+
+                <div class="markers">
+                    <label for="processador">
+                        <input type="radio" value="processador" class="input-campo"> Processador
+                    </label>    
+                    <label for="placa-de-video">
+                        <input type="radio" value="placa-de-video" class="input-campo"> Placa de Video
+                    </label>
+                    <label for="placa-mae">
+                        <input type="radio" value="placa-mae" class="input-campo"> Placa Mãe
+                    </label>
+                    <label for="monitor">
+                        <input type="radio" value="monitor" class="input-campo"> Monitor
+                    </label>
+                    
+                </div>
+
+                <div class="espacar">
+                    <label for="novidades">Deseja receber notificações por email? <br /><input type="radio" name="novidades-email" value="nao" class="input-campo"> Não
+                        <input type="radio" name="novidades-email" class="input-campo" value="sim"> Sim
+                    </label>
+                    
+                </div>
+                
+
+                
+
+            </fieldset>
+
+            <div class="dividir-tela">
+
+                <input type="reset" value="Limpar Formulário" class="botao-form">
+                <input type="submit" name="botao-enviar" class="botao-form" value="Enviar dados">
+            </div>
 
         </form>
     </main>
