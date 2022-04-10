@@ -25,7 +25,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
     background-color: #282525;
     margin: 0;
     height: 80px;
@@ -35,6 +35,19 @@ img {
     color: white;
     margin-bottom: 40px;
 
+}
+.conteudo-navegacao > h1{
+    width: 400px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.Logomarca{
+    width: 400px;
+}
+.logo-short{
+    width: 50px;
+    
 }
 
 
@@ -49,8 +62,10 @@ img {
 
 
 .links{
+    justify-content: end;
     display: flex;
     gap: 30px;
+    width: 400px;
 }
 
 
@@ -178,12 +193,12 @@ main.formulario{
 }
 .conteudo-bruto-split {
     width: 650px;
-    margin: 20px auto;
+    margin: 100px auto;
     text-align: right;
     display: flex;
     gap: 50px;
     align-items: center;
-
+    
 }
 
 h2{
