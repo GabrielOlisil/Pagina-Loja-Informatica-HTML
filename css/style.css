@@ -63,7 +63,6 @@ header > h1{
 }
 
 
-
 nav > a {
     text-decoration: none;
     color: white;
@@ -73,7 +72,7 @@ nav > a:hover {
 }
 
 
-nav{
+header > nav{
     justify-content: end;
     display: flex;
     gap: 30px;
@@ -94,6 +93,7 @@ main {
     border-top-right-radius: 12px;
     box-shadow: 1px 1px 10px rgb(155, 155, 155);
     padding-bottom: 30px;
+    clear: both;
 }
 
 main.formulario{
@@ -245,7 +245,9 @@ h2{
 }
 
 
-
+.campos-de-precos{
+    padding: 0 20px;
+}
 
     
 
@@ -410,7 +412,24 @@ footer > p{
     color: darkgrey;
 }
 
+.backdrop{
+
+    display: none;
+    margin: 80px auto 50px;
+    float: right;
+
+    background-color: #282525;
+
+    height: 35px;
+
+    border-radius: 0px 0px 0px 30px;
+    
+}
+
 @media (max-width:1200px){
+
+    
+
     .banner{
     max-width: 10000px;
     }
@@ -422,8 +441,9 @@ footer > p{
      margin: auto;
     }
 
-    header{
-        
+    header{ 
+        border-radius: 0px;
+        box-shadow: none;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -447,18 +467,34 @@ footer > p{
     
 
     nav.responsiva{
-        box-sizing: border-box;
-
-        display: flex;
-        max-width: 250px;
-
-    
-    
+        display: block;
+        max-width: 50px;
+        height: 100%;
+        padding-top: 30px;
     }
+
+    .responsiva > img {
+        float: right;
+    }
+
     
     .Logomarca {
         box-sizing: border-box;
-        max-width: 250px;
+        max-width: 50px;
+    }
+
+    .responsiva:hover .backdrop{
+        
+        position: relative;
+        right: 0;
+        top: 25px;
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        padding:20px;
+        margin-top: 50px;
     }
 
 }
