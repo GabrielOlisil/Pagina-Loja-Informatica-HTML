@@ -47,7 +47,6 @@ header{
 
 header > h1{
     width: 400px;
-    padding-right: 0px;
     text-align: center;
 }
 
@@ -55,11 +54,11 @@ header > h1{
     width: 400px;
 }
 .logo-short{
-    max-width: 50px;
+    width: 50px;
     
 }
 .img-short{
-    max-width: 50px;
+    width: 50px;
     
 }
 
@@ -112,6 +111,8 @@ main.formulario{
     padding: 70px 0px;  
     max-width: 500px;  
     margin: auto;
+    padding: 20px;
+
     
     
 }
@@ -422,31 +423,43 @@ footer > p{
     }
 
     header{
-        display: inline;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         
     }
     header h1{
-        max-width: 600px;
-        margin: 0 auto;
-        position: relative;
+        box-sizing: border-box;
 
-        top: 16px;
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
     }
 
 
-    header a{
+    header > nav {
         display: none;
         
     }
 
+    
+
     nav.responsiva{
-        display: block;
-        float: right;
-        width: 60px;
-        position: relative;
-        bottom: 26px;
+        box-sizing: border-box;
+
+        display: flex;
+        max-width: 250px;
+
+    
+    
     }
     
+    .Logomarca {
+        box-sizing: border-box;
+        max-width: 250px;
+    }
 
 }
 
@@ -456,5 +469,6 @@ footer > p{
     }
     .conteudo-bruto-split p{
         max-width: 300px;
+        
     }
 }
