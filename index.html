@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="conteudo-navegacao">
+    <header>
             
         <div class="Logomarca">
             <a href="index.html"><img class="logo-short" src="Imagens/logo-invertida.png" alt="logomarca"></a>
@@ -24,13 +24,18 @@
         </div>
 
         <h1>Gabriel Informática</h1>
-        <div class="links">            
+
+        <nav>            
             <a href="pages/cadastro.html">Cadastro</a>
             <a href="pages/faleConosco.html">Fale conosco</a>
             <a href="https://github.com/GabrielOlisil/Pagina-Loja-Informatica-HTML" target="_blank">Open Source</a>
-        </div>
+        </nav>
+
+        <nav class="responsiva">
+            <img src="Imagens/menu-icon.svg" alt="menu bar" class="img-short">
+        </nav>
         
-    </div>
+    </header>
 
     
         
@@ -39,14 +44,15 @@
 
         <section class="primeira-sessao">
             
-            <img src="Imagens/Logomarca.png" alt="Logomarca Gabriel Informática" draggable="false"/>
+            <img src="Imagens/Logomarca.png" alt="Logomarca Gabriel Informática"/>
             <p class="slogan">"Levando tecnologia para dentro da sua casa"</p>
         </section>
         
         <section class="banner">
 
             
-
+            <img src="Imagens/rocket.png" alt="Foguete decolando"/>
+            
             <div class="texto-banner">
                 <p>Turbine seu PC</p> 
                 <p>Com a empresa que tem a</p>  
@@ -57,7 +63,6 @@
                 <a class="botao-conferir" href="#preco">Confira!</a>
             </div>
 
-            <img src="Imagens/rocket.png" alt="Foguete decolando"/>
 
         </section>
 
@@ -203,7 +208,7 @@
         
         </section> 
 
-        <div class="copyright"><p>copyright 2004-2022<sup>&copy</sup></p></div>
+        <footer><p>copyright 2004-2022<sup>&copy</sup></p></footer>
     
     
     </main>
