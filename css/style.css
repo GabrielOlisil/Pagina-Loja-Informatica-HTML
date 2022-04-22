@@ -431,7 +431,8 @@ footer > p{
     
 
     .banner{
-    max-width: 10000px;
+        max-height:  10000px;
+        padding: 20px;
     }
     .banner img{
      float: none;
