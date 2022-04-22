@@ -435,6 +435,7 @@ footer > p{
     }
     .banner img{
      float: none;
+     margin: auto;
      margin-bottom: 50px;
     }
     .texto-banner{
