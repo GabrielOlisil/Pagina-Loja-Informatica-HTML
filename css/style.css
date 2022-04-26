@@ -22,14 +22,9 @@ img {
 
 
 header{
+    box-sizing: border-box;
     height: 80px;
-    
-
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; 
+     
     
     
     background-color: #282525;
@@ -40,12 +35,23 @@ header{
 
 
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    padding: 0 100px;
 
     top: 0;
 }
 
-header > h1{
+.area-segura {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    
+    position: relative;
+}
+
+header > .area-segura> h1{
     width: 400px;
     text-align: center;
 }
@@ -67,12 +73,12 @@ nav > a {
     text-decoration: none;
     color: white;
 }
-nav > a:hover {
+ nav > a:hover {
     color: #48a8b5;
 }
 
 
-header > nav{
+.area-segura > nav{
     justify-content: end;
     display: flex;
     gap: 30px;
@@ -467,6 +473,8 @@ footer a:hover {
     color: #48a8b5;
 }
 
+
+
 @media (max-width:1200px){
 
     
@@ -486,23 +494,27 @@ footer a:hover {
     header{ 
         border-radius: 0px;
         box-shadow: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        
+        
         padding: 0 10px;
 
         
     }
-    header h1{
+    .area-segura {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .area-segura h1{
         box-sizing: border-box;
 
-        margin: 0 auto;
         max-width: 300px;
         text-align: center;
     }
 
 
-    header > nav {
+    .area-segura > nav {
         display: none;
         
     }
@@ -511,13 +523,15 @@ footer a:hover {
 
     nav.responsiva{
         display: block;
+        position: relative;
         max-width: 50px;
         height: 100%;
-        padding-top: 30px;
     }
 
     .responsiva > img {
-        float: right;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     
@@ -529,6 +543,7 @@ footer a:hover {
     .responsiva:hover .backdrop{
         
         position: relative;
+        
         right: 0;
         top: 25px;
         display: flex;
